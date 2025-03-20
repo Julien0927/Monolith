@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --primary-color: #e70060;
+  --secondary-color: #00d0ff;
+  --tertiary-color: #7FF1CF;
+  --quaternary-color: #000000;
+  --quinary-color: #ffffff;
+
+  --font-family: "Montserrat", sans-serif;
+  --font-family-bold: "Montserrat-Bold", sans-serif;
+  --font-family-extra-bold: "Montserrat-ExtraBold", sans-serif;
+  --font-family-light: "Montserrat-Light", sans-serif;
+  --font-family-thin: "Montserrat-Thin", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("./assets/fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("./assets/fonts/Montserrat-Thin.ttf");
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-montserrat-bold {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.font-montserrat-extra-bold {
+  font-family: "Montserrat-ExtraBold", sans-serif;
+}
+
+.font-montserrat-light {
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+.font-montserrat-thin {
+  font-family: "Montserrat-Thin", sans-serif;
+}
+
+.background-diagonal {
+  background: linear-gradient(
+    105deg, 
+    #e70060 40%,  
+    #ffffff 33%   
+  );
+}
+
+.monolith-text {
+  color: white;
+  text-shadow:
+    3px 3px 0px #17e089,  /* couche turquoise */
+    6px 6px 0px #00d0ff;  /* couche bleue */
+}
+
+.entry-page {
+  background-image: url('ton_image_de_point.png');
+  background-repeat: repeat;
+  /* ou avec une méthode CSS Grid si tu préfères */
+  background: radial-gradient(circle, white 0.02px, transparent 1px);
+  background-size: 10px 10px;
+}
